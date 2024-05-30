@@ -11,7 +11,9 @@ export default function Navbar() {
         Projects
       </a>
       <a className="mr-4 lg:mr-16 hover:text-[#252424]">Contact</a>
-      <a className="hover:text-[#252424]">Resume</a>
+      <a className="hover:text-[#252424]" href="/files/CV.pdf" target="_blank">
+        Resume
+      </a>
     </div>
   );
 }
