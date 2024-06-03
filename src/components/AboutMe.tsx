@@ -25,7 +25,7 @@ export default function AboutMe() {
           </h2>
           <img src={star} alt="" />
         </div>
-        <p className="block mx-auto justify-center">
+        <p className="max-lg:text-center">
           Some description of my work, and work ethics, why I am the best and
           how could anyone trust me with their projects, lorem Ipsum, lorem
           Ipsum, Some description of my work, and work ethics, why I am the best

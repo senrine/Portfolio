@@ -2,31 +2,38 @@
   "works": [
     {
       "name": "Rising Sun",
-      "description": "",
-      "technologies": [],
+      "description": "I have designed, and developed this restaurant’s website",
+      "technologies": [
+        "React.js",
+        "Typescript",
+        "Redux",
+        "PHP",
+        "Symfony",
+        "Docker"
+      ],
       "longDescription": "",
-      "images": []
+      "image": "Rising Sun"
     },
     {
       "name": "Med Ease",
       "description": "",
       "technologies": [],
       "longDescription": "",
-      "images": []
+      "image": "Rising Sun"
     },
     {
       "name": "La Vue",
       "description": "",
       "technologies": [],
       "longDescription": "",
-      "images": []
+      "image": "La Vue"
     },
     {
       "name": "Portfolio",
       "description": "",
       "technologies": [],
       "longDescription": "",
-      "images": []
+      "image": "La Vue"
     }
   ]
 }
