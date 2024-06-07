@@ -1,0 +1,36 @@
+{
+  "works": [
+    {
+      "name": "Rising Sun",
+      "description": "Conception et développement d'une plateforme web pour un restaurant asiatique.",
+      "technologies": [
+        "React.js",
+        "Typescript",
+        "Redux",
+        "PHP",
+        "Symfony",
+        "Docker",
+        "SQLite"
+      ],
+      "longDescription": "J'ai réalisé entièrement le site web du restaurant Rising Sun, du design à la mise en œuvre, en utilisant des technologies modernes telles que React.js, Redux, PHP Symfony et SQLite. Le projet comprend des fonctionnalités telles que la connexion et la création de compte, la consultation du menu, la commande en ligne et la gestion du panier. Grâce à l'utilisation de Docker, le déploiement est simplifié et la connexion entre le front-end et le back-end est transparente. Ce projet met en avant mes compétences polyvalentes en matière de conception et de développement web full-stack.",
+      "image": "Rising Sun",
+      "lien": "https://github.com/senrine/Asian-Restaurant---Frontend"
+    },
+    {
+      "name": "Med Ease",
+      "description": "Conception et développement d'une plateforme web pour des prises de rendez-vous médicaux.",
+      "technologies": ["PHP", "Symfony", "Docker", "SQL"],
+      "longDescription": "Med Ease est une plateforme web que j'ai conçue et développée pour faciliter la prise de rendez-vous entre les patients et les soignants. Les utilisateurs peuvent créer un compte, se connecter et consulter les horaires disponibles des médecins pour prendre rendez-vous en ligne. Les médecins peuvent également mettre en ligne les factures des patients, permettant ainsi un accès facile et rapide à ces documents. J'ai également réalisé le design de l'interface utilisateur à l'aide de Figma, en veillant à offrir une expérience intuitive et agréable aux utilisateurs.",
+      "image": "Med Ease",
+      "lien": "https://github.com/senrine/MedEase-Back"
+    },
+    {
+      "name": "La Vue",
+      "description": "Conception complète d'une boutique e-commerce de lunettes.",
+      "technologies": ["Figma", "Adobe Photoshop"],
+      "longDescription": "J'ai réalisé le design complet du site e-commerce La Vie, une boutique en ligne spécialisée dans la vente de lunettes. En utilisant Figma, j'ai créé une interface utilisateur ultra-moderne, élégante et intuitive pour offrir aux clients une expérience de navigation et d'achat exceptionnelle. Les pages détaillées de chaque paire de lunettes sont conçues pour présenter les caractéristiques et les avantages de manière claire et attrayante, avec une mise en page innovante et des éléments visuels accrocheurs. En plus de l'esthétique moderne, j'ai accordé une attention particulière à l'ergonomie et à la convivialité du site.",
+      "image": "La Vue",
+      "lien": "https://www.figma.com/design/xD5ymswmuf609NeTzGwTt9/UrbanStride?node-id=0-1&t=vYq2ivUdgTC3g3D1-1"
+    }
+  ]
+}
