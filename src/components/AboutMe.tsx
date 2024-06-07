@@ -15,22 +15,21 @@ export default function AboutMe() {
       <div className="flex flex-col font-Roboto text-[#252424]">
         <div className="flex flex-row justify-center lg:justify-start items-center mb-4">
           <h3 className="mr-2 text-[18px] lg:text-[26px] font-medium">
-            About Me
+            À propos
           </h3>
           <hr className="w-2 h-2 border-2 rounded-full bg-[#F24CEB] border-[#252424]" />
         </div>
         <div className="flex flex-row justify-center lg:justify-start items-start mb-10">
           <h2 className="font-semibold font-Syne text-[20px] lg:text-[30px] mr:2 lg:mr-4">
-            I Design & Develop the best websites
+            Je conçois et développe des sites web exceptionnels.
           </h2>
           <img src={star} alt="" />
         </div>
-        <p className="max-lg:text-center">
-          Some description of my work, and work ethics, why I am the best and
-          how could anyone trust me with their projects, lorem Ipsum, lorem
-          Ipsum, Some description of my work, and work ethics, why I am the best
-          and how could anyone trust me with their projects, lorem Ipsum, lorem
-          Ipsum.
+        <p className="max-lg:text-center text-[20px]">
+          Je suis une jeune passionnée de conception et de développement web,
+          créant des sites exceptionnels alliant esthétique moderne et
+          fonctionnalités optimisées. Faites-moi confiance pour concrétiser vos
+          idées avec excellence.
         </p>
       </div>
     </div>

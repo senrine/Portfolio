@@ -5,14 +5,16 @@ export default function Navbar() {
         className="mr-4 lg:mr-16 hover:text-[#252424] whitespace-nowrap"
         href="#AboutMe"
       >
-        About Me
+        À propos
       </a>
       <a className="mr-4 lg:mr-16 hover:text-[#252424]" href="#MyWork">
-        Projects
+        Projets
       </a>
-      <a className="mr-4 lg:mr-16 hover:text-[#252424]">Contact</a>
+      <a className="mr-4 lg:mr-16 hover:text-[#252424]" href="#Contact">
+        Contact
+      </a>
       <a className="hover:text-[#252424]" href="/files/CV.pdf" target="_blank">
-        Resume
+        CV
       </a>
     </div>
   );

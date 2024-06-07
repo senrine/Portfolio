@@ -6,6 +6,7 @@ export interface WorkItem {
   technologies: Array<string>;
   longDescription: string;
   image: string;
+  lien: string;
 }
 
 interface WorkState {
