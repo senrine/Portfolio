@@ -8,16 +8,17 @@ import "react-multi-carousel/lib/styles.css";
 import { useMediaQuery } from "@mui/material";
 import WorkModal from "./WorkModal";
 import { createPortal } from "react-dom";
+import { AppDispatch } from "../store";
 
 export default function MyWork() {
-  const disptach = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const { data } = useSelector((state: RootState) => state.works);
   const [openModal, setOpenModal] = useState(false);
   const [itemIndex, setItemIndex] = useState(0);
 
   useEffect(() => {
-    disptach(fetchWorks());
-  }, [disptach]);
+    dispatch(fetchWorks());
+  }, [dispatch]);
 
   const responsive = {
     tablet: {

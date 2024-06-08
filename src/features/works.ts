@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface WorkItem {
   name: string;
@@ -17,6 +17,19 @@ interface WorkState {
 
 const initialState: WorkState = { data: [], loading: false, error: null };
 
+export const fetchWorks = createAsyncThunk<WorkItem[], void, { rejectValue: string }>(
+  "works/fetchWorks",
+  async (_, { rejectWithValue }) => {
+    try {
+      const response = await fetch("/data/works.json");
+      const data = await response.json();
+      return data.works;
+    } catch (error) {
+      return rejectWithValue((error as Error).message);
+    }
+  }
+);
+
 export const works = createSlice({
   name: "works",
   initialState,
@@ -27,22 +40,11 @@ export const works = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchWorks.fulfilled, (state, action) => {
+      .addCase(fetchWorks.fulfilled, (state, action: PayloadAction<WorkItem[]>) => {
         state.loading = false;
         state.error = null;
         state.data = action.payload;
       })
-      .addCase(fetchWorks.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error.message || "Failed to fetch.";
-      });
   },
 });
-
-export const fetchWorks = createAsyncThunk("works/fetchWorks", async () => {
-  const response = await fetch("/data/works.json");
-  const data = await response.json();
-  return data.works;
-});
-
 export default works.reducer;
