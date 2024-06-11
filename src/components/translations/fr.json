@@ -1,0 +1,78 @@
+{
+  "hero.greeting": {
+    "id": "hero.greeting",
+    "defaultMessage": "Salut! C'est Nesrine👋"
+  },
+  "hero.title": {
+    "id": "hero.title",
+    "defaultMessage": "Développeuse Fullstack, & UI UX Designer"
+  },
+  "hero.description": {
+    "id": "hero.description",
+    "defaultMessage": "Je crée des sites web personnalisés de la conception au codage, avec une expertise en design moderne et en développement efficace. Faites-moi confiance pour concrétiser vos projets en ligne."
+  },
+  "hero.contact": {
+    "id": "hero.contact",
+    "defaultMessage": "Contactez moi"
+  },
+  "hero.projects": {
+    "id": "hero.projects",
+    "defaultMessage": "Mes Projets"
+  },
+  "navbar.contact": {
+    "id": "navbar.contact",
+    "defaultMessage": "Contact"
+  },
+  "navbar.projects": {
+    "id": "navbar.projects",
+    "defaultMessage": "Projets"
+  },
+  "navbar.resume": {
+    "id": "navbar.resume",
+    "defaultMessage": "CV"
+  },
+  "navbar.about": {
+    "id": "navbar.about",
+    "defaultMessage": "À propos"
+  },
+  "navbar.lang": {
+    "id": "navbar.lang",
+    "defaultMessage": "Fr"
+  },
+  "about.firstTitle": {
+    "id": "about.title",
+    "defaultMessage": "À propos"
+  },
+  "about.title": {
+    "id": "about.title",
+    "defaultMessage": "Je conçois et développe des sites web exceptionnels."
+  },
+  "about.description": {
+    "id": "about.description",
+    "defaultMessage": "Je suis une jeune passionnée de conception et de développement web, créant des sites exceptionnels alliant esthétique moderne et fonctionnalités optimisées. Faites-moi confiance pour concrétiser vos idées avec excellence."
+  },
+  "work.title": {
+    "id": "work.title",
+    "defaultMessage": "Projets"
+  },
+  "work.btn": {
+    "id": "work.btn",
+    "defaultMessage": "Voir plus"
+  },
+  "workModal.tech": {
+    "id": "workModal.tech",
+    "defaultMessage": "Technologies utilisées : "
+  },
+  "workModal.link": {
+    "id": "workModal.link",
+    "defaultMessage": "Lien vers le projet."
+  },
+  "contact.name": {
+    "id": "contact.name",
+    "defaultMessage": "Nom"
+  },
+  "contact.btn": {
+    "id": "contact.name",
+    "defaultMessage": "Envoyer"
+  }
+}

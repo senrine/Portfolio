@@ -1,7 +1,14 @@
 import aboutMeFigure from "../assets/About Me.svg";
 import star from "../assets/Star.svg";
+import enLang from "./translations/en.json";
+import frLang from "./translations/fr.json";
 
-export default function AboutMe() {
+interface heroProps {
+  en: boolean;
+  fr: boolean;
+}
+
+export default function AboutMe({ en, fr }: heroProps) {
   return (
     <div
       id="AboutMe"
@@ -15,21 +22,21 @@ export default function AboutMe() {
       <div className="flex flex-col font-Roboto text-[#252424]">
         <div className="flex flex-row justify-center lg:justify-start items-center mb-4">
           <h3 className="mr-2 text-[18px] lg:text-[26px] font-medium">
-            À propos
+            {(en && enLang["about.firstTitle"].defaultMessage) ||
+              (fr && frLang["about.firstTitle"].defaultMessage)}
           </h3>
           <hr className="w-2 h-2 border-2 rounded-full bg-[#F24CEB] border-[#252424]" />
         </div>
         <div className="flex flex-row justify-center lg:justify-start items-start mb-10">
           <h2 className="font-semibold font-Syne text-[20px] lg:text-[30px] mr:2 lg:mr-4">
-            Je conçois et développe des sites web exceptionnels.
+            {(en && enLang["about.title"].defaultMessage) ||
+              (fr && frLang["about.title"].defaultMessage)}
           </h2>
           <img src={star} alt="" />
         </div>
         <p className="max-lg:text-center text-[20px]">
-          Je suis une jeune passionnée de conception et de développement web,
-          créant des sites exceptionnels alliant esthétique moderne et
-          fonctionnalités optimisées. Faites-moi confiance pour concrétiser vos
-          idées avec excellence.
+          {(en && enLang["about.description"].defaultMessage) ||
+            (fr && frLang["about.description"].defaultMessage)}
         </p>
       </div>
     </div>

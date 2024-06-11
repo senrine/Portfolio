@@ -1,0 +1,78 @@
+{
+  "hero.greeting": {
+    "id": "hero.greeting",
+    "defaultMessage": "Hi! It's Nesrine👋"
+  },
+  "hero.title": {
+    "id": "hero.title",
+    "defaultMessage": "Fullstack Developer, & UI UX Designer"
+  },
+  "hero.description": {
+    "id": "hero.description",
+    "defaultMessage": "I create custom websites from design to code, with expertise in modern design and efficient development. Trust me to bring your online projects to life."
+  },
+  "hero.contact": {
+    "id": "hero.contact",
+    "defaultMessage": "Contact Me"
+  },
+  "hero.projects": {
+    "id": "hero.projects",
+    "defaultMessage": "My Projects"
+  },
+  "navbar.contact": {
+    "id": "navbar.contact",
+    "defaultMessage": "Contact"
+  },
+  "navbar.projects": {
+    "id": "navbar.projects",
+    "defaultMessage": "Projects"
+  },
+  "navbar.resume": {
+    "id": "navbar.resume",
+    "defaultMessage": "Resume"
+  },
+  "navbar.about": {
+    "id": "navbar.about",
+    "defaultMessage": "About Me"
+  },
+  "navbar.lang": {
+    "id": "navbar.lang",
+    "defaultMessage": "En"
+  },
+  "about.firstTitle": {
+    "id": "about.title",
+    "defaultMessage": "About Me"
+  },
+  "about.title": {
+    "id": "about.title",
+    "defaultMessage": "I design and develop exceptional websites."
+  },
+  "about.description": {
+    "id": "about.description",
+    "defaultMessage": "I am a young enthusiast of web design and development, creating exceptional sites that combine modern aesthetics with optimized functionality. Trust me to bring your ideas to life with excellence."
+  },
+  "work.title": {
+    "id": "work.title",
+    "defaultMessage": "Projects"
+  },
+  "work.btn": {
+    "id": "work.btn",
+    "defaultMessage": "See more"
+  },
+  "workModal.tech": {
+    "id": "workModal.tech",
+    "defaultMessage": "Technologies used : "
+  },
+  "workModal.link": {
+    "id": "workModal.link",
+    "defaultMessage": "Link to the project."
+  },
+  "contact.name": {
+    "id": "contact.name",
+    "defaultMessage": "Name"
+  },
+  "contact.btn": {
+    "id": "contact.name",
+    "defaultMessage": "Submit"
+  }
+}

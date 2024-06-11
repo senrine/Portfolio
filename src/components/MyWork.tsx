@@ -9,16 +9,25 @@ import { useMediaQuery } from "@mui/material";
 import WorkModal from "./WorkModal";
 import { createPortal } from "react-dom";
 import { AppDispatch } from "../store";
+import enLang from "./translations/en.json";
+import frLang from "./translations/fr.json";
 
-export default function MyWork() {
+interface workProps {
+  en: boolean;
+  fr: boolean;
+}
+
+export default function MyWork({ en, fr }: workProps) {
   const dispatch = useDispatch<AppDispatch>();
   const { data } = useSelector((state: RootState) => state.works);
   const [openModal, setOpenModal] = useState(false);
   const [itemIndex, setItemIndex] = useState(0);
 
+  const language = en ? "En" : "Fr";
+
   useEffect(() => {
-    dispatch(fetchWorks());
-  }, [dispatch]);
+    dispatch(fetchWorks({ lang: language }));
+  }, [en, fr]);
 
   const responsive = {
     tablet: {
@@ -36,7 +45,10 @@ export default function MyWork() {
   return (
     <div id="MyWork" className="mt-16 mb-16 text-[#252424]">
       <div className="flex flex-row justify-center lg:justify-start items-center mb-8 lg:mb-16">
-        <h3 className="mr-2 text-[20px] lg:text-[26px] font-medium">Projets</h3>
+        <h3 className="mr-2 text-[20px] lg:text-[26px] font-medium">
+          {(en && enLang["work.title"].defaultMessage) ||
+            (fr && frLang["work.title"].defaultMessage)}
+        </h3>
         <hr className="w-2 h-2 border-2 rounded-full bg-[#F24CEB] border-[#252424]" />
       </div>
       {data.length > 0 && (
@@ -62,7 +74,8 @@ export default function MyWork() {
               }}
               className="py-2 w-[100px] lg:w-[160px] border rounded-full border-[#222831] font-medium shadow-md shadow-[#22283160] hover:shadow-transparent"
             >
-              Voir plus
+              {(en && enLang["work.btn"].defaultMessage) ||
+                (fr && frLang["work.btn"].defaultMessage)}
             </button>
           </div>
 
@@ -81,7 +94,8 @@ export default function MyWork() {
               }}
               className="py-2 w-[100px] lg:w-[160px] border rounded-full border-[#222831] font-medium shadow-md shadow-[#22283160] hover:shadow-transparent"
             >
-              Voir plus
+              {(en && enLang["work.btn"].defaultMessage) ||
+                (fr && frLang["work.btn"].defaultMessage)}
             </button>
           </div>
 
@@ -100,7 +114,8 @@ export default function MyWork() {
               }}
               className="py-2 w-[100px] lg:w-[160px] border rounded-full border-[#222831] font-medium shadow-md shadow-[#22283160] hover:shadow-transparent"
             >
-              Voir plus
+              {(en && enLang["work.btn"].defaultMessage) ||
+                (fr && frLang["work.btn"].defaultMessage)}
             </button>
           </div>
         </Carousel>
@@ -110,6 +125,8 @@ export default function MyWork() {
           <WorkModal
             onClose={() => setOpenModal(!openModal)}
             data={data[itemIndex]}
+            en={en}
+            fr={fr}
           />,
           document.body
         )}

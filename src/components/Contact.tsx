@@ -1,7 +1,14 @@
 import emailjs from "emailjs-com";
 import { FormEvent } from "react";
+import enLang from "./translations/en.json";
+import frLang from "./translations/fr.json";
 
-export default function Contact() {
+interface contactProps {
+  en: boolean;
+  fr: boolean;
+}
+
+export default function Contact({ en, fr }: contactProps) {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -45,7 +52,10 @@ export default function Contact() {
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start w-full text-[14px] md:text-[16px] lg:text-[20px]">
         <div className="flex flex-col w-full md:w-[40%] md:mr-2">
-          <label className="font-medium pl-1 block mb-2">Nom</label>
+          <label className="font-medium pl-1 block mb-2">
+            {(en && enLang["contact.name"].defaultMessage) ||
+              (fr && frLang["contact.name"].defaultMessage)}
+          </label>
           <input
             type="text"
             name="name"
@@ -68,7 +78,8 @@ export default function Contact() {
         </div>
       </div>
       <button className="w-[140px] py-2 lg:w-[180px] border rounded-full border-[#222831] bg-[#C9F129] font-medium shadow-md hover:shadow-transparent shadow-[#22283160] block ml-auto mt-8">
-        Envoyer
+        {(en && enLang["contact.btn"].defaultMessage) ||
+          (fr && frLang["contact.btn"].defaultMessage)}
       </button>
     </form>
   );

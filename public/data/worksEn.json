@@ -1,0 +1,36 @@
+{
+  "works": [
+    {
+      "name": "Rising Sun",
+      "description": "I have designed and developped a web platform for an Asian restaurant.",
+      "technologies": [
+        "React.js",
+        "Typescript",
+        "Redux",
+        "PHP",
+        "Symfony",
+        "Docker",
+        "SQLite"
+      ],
+      "longDescription": "I have fully created the Rising Sun restaurant website, from design to implementation, using modern technologies such as React.js, Redux, PHP Symfony and SQLite. The project includes features such as login and account creation, menu viewing, online ordering, and cart management. Thanks to the use of Docker, deployment is simplified and the connection between the front-end and back-end is seamless. This project highlights my versatile skills in full-stack web design and development.",
+      "image": "Rising Sun",
+      "lien": "https://github.com/senrine/Asian-Restaurant---Frontend"
+    },
+    {
+      "name": "Med Ease",
+      "description": "Design and development of a web platform for medical appointments.",
+      "technologies": ["PHP", "Symfony", "Docker", "SQL"],
+      "longDescription": "Med Ease is a web platform that I designed and developed to facilitate appointment scheduling between patients and healthcare providers. Users can create an account, log in, and view available doctor schedules to make appointments online. Doctors can also upload patient invoices, allowing easy and quick access to these documents. I also designed the user interface using Figma, ensuring an intuitive and pleasant experience for users.",
+      "image": "Med Ease",
+      "lien": "https://github.com/senrine/MedEase-Back"
+    },
+    {
+      "name": "La Vue",
+      "description": "Complete design of an e-commerce eyewear store.",
+      "technologies": ["Figma", "Adobe Photoshop"],
+      "longDescription": "I created the complete design for the La Vie e-commerce website, an online store specializing in the sale of eyewear. Using Figma, I crafted an ultra-modern, elegant, and intuitive user interface to provide customers with an exceptional browsing and shopping experience. The detailed pages for each pair of glasses are designed to showcase the features and benefits in a clear and appealing manner, with an innovative layout and eye-catching visual elements. In addition to the modern aesthetics, I paid particular attention to the usability and user-friendliness of the site.",
+      "image": "La Vue",
+      "lien": "https://www.figma.com/design/xD5ymswmuf609NeTzGwTt9/UrbanStride?node-id=0-1&t=vYq2ivUdgTC3g3D1-1"
+    }
+  ]
+}

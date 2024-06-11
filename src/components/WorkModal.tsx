@@ -1,3 +1,6 @@
+import enLang from "./translations/en.json";
+import frLang from "./translations/fr.json";
+
 interface dataForm {
   name: string;
   description: string;
@@ -10,9 +13,11 @@ interface dataForm {
 interface ModalProps {
   onClose: () => void;
   data: dataForm;
+  en: boolean;
+  fr: boolean;
 }
 
-export default function WorkModal({ onClose, data }: ModalProps) {
+export default function WorkModal({ onClose, data, en, fr }: ModalProps) {
   return (
     <div
       onClick={() => onClose()}
@@ -38,7 +43,8 @@ export default function WorkModal({ onClose, data }: ModalProps) {
           {data.longDescription}
         </p>
         <p className="text-[14px] lg:text-[16px] mb-4 text-center">
-          Technologies utilisées :{" "}
+          {(en && enLang["workModal.tech"].defaultMessage) ||
+            (fr && frLang["workModal.tech"].defaultMessage)}
           {data.technologies.map((tech, id) => (
             <span className="font-semibold  font-Syne" key={id}>
               {tech}
@@ -51,7 +57,8 @@ export default function WorkModal({ onClose, data }: ModalProps) {
           className="text-[12px] lg:text-[14px] mb-4 font-medium"
           href={data.lien}
         >
-          Lien vers le projet.
+          {(en && enLang["workModal.link"].defaultMessage) ||
+            (fr && frLang["workModal.link"].defaultMessage)}
         </a>
       </div>
     </div>

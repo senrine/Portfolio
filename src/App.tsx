@@ -7,18 +7,34 @@ import UpAndDown from "./components/UpAndDown";
 import github from "./assets/Github.svg";
 import mail from "./assets/Mail.svg";
 import linkedin from "./assets/Linkedin.svg";
+import { useState } from "react";
 
 function App() {
+  const [fr, setFr] = useState(true);
+  const [en, setEn] = useState(false);
+
+  function changeLanguage() {
+    if (fr) {
+      setEn(true);
+      setFr(false);
+    } else {
+      if (en) {
+        setFr(true);
+        setEn(false);
+      }
+    }
+  }
+
   return (
     <div className="w-full h-full px-10 py-8 md:px-16 md:py-10 lg:px-24 lg:py-16">
-      <Navbar />
-      <HeroSection />
+      <Navbar en={en} fr={fr} changeLanguage={changeLanguage} />
+      <HeroSection en={en} fr={fr} />
       <UpAndDown hrefDown="#AboutMe" hrefUp="#HeroSection" />
-      <AboutMe />
+      <AboutMe en={en} fr={fr} />
       <UpAndDown hrefDown="#MyWork" hrefUp="#AboutMe" />
-      <MyWork />
+      <MyWork en={en} fr={fr} />
       <UpAndDown hrefDown="#Contact" hrefUp="#MyWork" />
-      <Contact />
+      <Contact en={en} fr={fr} />
       <div className="mt-48 flex flex-row justify-center items-center mx-auto">
         <a href="https://github.com/senrine" target="_blank" className="mr-6">
           <img src={github} />
