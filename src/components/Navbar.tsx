@@ -12,17 +12,17 @@ export default function Navbar({ en, fr, changeLanguage }: navbarProps) {
   return (
     <div className="flex w-full justify-center lg:justify-end items-center font-Roboto text-[#31363F80] text-[12px] md:text-[16px]">
       <a
-        className="mr-4 lg:mr-16 hover:text-[#252424] whitespace-nowrap"
+        className="mr-3 md:mr-16 hover:text-[#252424] whitespace-nowrap"
         href="#AboutMe"
       >
         {(en && enLang["navbar.about"].defaultMessage) ||
           (fr && frLang["navbar.about"].defaultMessage)}
       </a>
-      <a className="mr-4 lg:mr-16 hover:text-[#252424]" href="#MyWork">
+      <a className="mr-3 md:mr-16 hover:text-[#252424]" href="#MyWork">
         {(en && enLang["navbar.projects"].defaultMessage) ||
           (fr && frLang["navbar.projects"].defaultMessage)}
       </a>
-      <a className="mr-4 lg:mr-16 hover:text-[#252424]" href="#Contact">
+      <a className="mr-3 md:mr-16 hover:text-[#252424]" href="#Contact">
         {(en && enLang["navbar.contact"].defaultMessage) ||
           (fr && frLang["navbar.contact"].defaultMessage)}
       </a>
@@ -34,9 +34,9 @@ export default function Navbar({ en, fr, changeLanguage }: navbarProps) {
         onClick={() => {
           changeLanguage();
         }}
-        className="flex items-center justify-center md:ml-auto"
+        className="flex items-center justify-center ml-auto"
       >
-        <img className="w-3 lg:w-4" src={lang} />
+        <img className="w-3 lg:w-4 " src={lang} />
       </a>
     </div>
   );
