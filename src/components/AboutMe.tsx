@@ -32,7 +32,6 @@ export default function AboutMe({ en, fr }: heroProps) {
             {(en && enLang["about.title"].defaultMessage) ||
               (fr && frLang["about.title"].defaultMessage)}
           </h2>
-          <img src={star} alt="" />
         </div>
         <p className="max-lg:text-center text-[20px]">
           {(en && enLang["about.description"].defaultMessage) ||

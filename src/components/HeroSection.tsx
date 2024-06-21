@@ -15,22 +15,6 @@ export default function HeroSection({ en, fr }: heroProps) {
       id="HeroSection"
       className="relative w-full h-fit flex justify-center items-center"
     >
-      <img
-        className="absolute w-9 md:w-14 left-2 md:left-10 lg:left-24"
-        src={figure1}
-        alt="figure1"
-      />
-      <img
-        className="absolute w-4 md:w-6 right-0 md:right-10 top-24 lg:right-24 lg:top-32"
-        src={figure2}
-        alt="figure1"
-      />
-      <img
-        className="absolute w-8 md:w-12 right-0 bottom-64 md:right-10 lg:right-24 lg:bottom-48"
-        src={figure3}
-        alt="figure1"
-      />
-
       <div className="flex flex-col items-center justify-center py-24 text-[#252424] w-[60%]">
         <div className="flex flex-row items-center justify-center mb-4 whitespace-nowrap">
           <hr className="w-4 lg:w-10 rounded border-2 border-[#252424] mr-2"></hr>
