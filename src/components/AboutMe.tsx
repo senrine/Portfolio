@@ -1,5 +1,4 @@
 import aboutMeFigure from "../assets/About Me.svg";
-import star from "../assets/Star.svg";
 import enLang from "./translations/en.json";
 import frLang from "./translations/fr.json";
 

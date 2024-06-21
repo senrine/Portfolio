@@ -1,6 +1,3 @@
-import figure1 from "../assets/Rectangle 17.svg";
-import figure2 from "../assets/Rectangle 18.svg";
-import figure3 from "../assets/Polygon 1.svg";
 import enLang from "./translations/en.json";
 import frLang from "./translations/fr.json";
 
