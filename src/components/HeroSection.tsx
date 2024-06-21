@@ -12,7 +12,7 @@ export default function HeroSection({ en, fr }: heroProps) {
       id="HeroSection"
       className="relative w-full h-fit flex justify-center items-center"
     >
-      <div className="flex flex-col items-center justify-center py-24 text-[#252424] w-[60%]">
+      <div className="flex flex-col items-center justify-center py-10 lg:py-24 text-[#252424] w-[60%]">
         <div className="flex flex-row items-center justify-center mb-4 whitespace-nowrap">
           <hr className="w-4 lg:w-10 rounded border-2 border-[#252424] mr-2"></hr>
           <h3 className="text-[18px] md:text-[20px] lg:text-[30px] font-semibold">
