@@ -20,7 +20,6 @@ export default function Contact({ en, fr }: contactProps) {
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
 
-    // Form validation
     const newErrors: { [key: string]: string } = {};
     if (!name.trim()) {
       newErrors.name = en ? "Name is required" : "Le nom est requis";
@@ -75,7 +74,6 @@ export default function Contact({ en, fr }: contactProps) {
       id="Contact"
       className="text-[#252424] font-Roboto mt-16 w-full"
     >
-      {/* ... (rest of your JSX remains the same) ... */}
       <div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start w-full text-[14px] md:text-[16px] lg:text-[20px]">
         <div className="flex flex-col w-full md:w-[40%] md:mr-2">
           <label className="font-medium pl-1 block mb-2">
@@ -86,8 +84,10 @@ export default function Contact({ en, fr }: contactProps) {
             type="text"
             name="name"
             className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
-              errors.name ? "border-red-500" : "border-[#252424]"
-            } mb-4 md:mb-10`}
+              errors.name
+                ? "border-red-500 mb-2"
+                : "border-[#252424]  mb-4 md:mb-10"
+            }`}
           />
           {errors.name && (
             <p className="text-red-500 text-sm mb-2">{errors.name}</p>
@@ -98,11 +98,13 @@ export default function Contact({ en, fr }: contactProps) {
             type="email"
             name="email"
             className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
-              errors.email ? "border-red-500" : "border-[#252424]"
-            } max-md:mb-4`}
+              errors.email
+                ? "border-red-500 mb-2"
+                : "border-[#252424] max-md:mb-4"
+            }`}
           />
           {errors.email && (
-            <p className="text-red-500 text-sm mb-2">{errors.email}</p>
+            <p className="text-red-500 text-sm max-sm:mb-2">{errors.email}</p>
           )}
         </div>
         <div className="flex flex-col w-full md:w-[40%] md:ml-2">
@@ -110,11 +112,11 @@ export default function Contact({ en, fr }: contactProps) {
           <textarea
             name="message"
             className={`py-3 px-2 w-full h-[100px] md:h-[180px] rounded-md bg-transparent border ${
-              errors.message ? "border-red-500" : "border-[#252424]"
+              errors.message ? "border-red-500 mb-2" : "border-[#252424]"
             } resize-none`}
           />
           {errors.message && (
-            <p className="text-red-500 text-sm mt-2">{errors.message}</p>
+            <p className="text-red-500 text-sm">{errors.message}</p>
           )}
         </div>
       </div>
