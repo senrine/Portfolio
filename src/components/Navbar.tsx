@@ -36,7 +36,7 @@ export default function Navbar({ en, fr, changeLanguage }: navbarProps) {
         }}
         className="flex items-center justify-center ml-auto"
       >
-        <img className="w-3 lg:w-4 " src={lang} />
+        <img className="w-3 lg:w-4 cursor-pointer" src={lang} />
       </a>
     </div>
   );
