@@ -69,61 +69,67 @@ export default function Contact({ en, fr }: contactProps) {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      id="Contact"
-      className="text-[#252424] font-Roboto mt-16 w-full"
-    >
-      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start w-full text-[14px] md:text-[16px] lg:text-[20px]">
-        <div className="flex flex-col w-full md:w-[40%] md:mr-2">
-          <label className="font-medium pl-1 block mb-2">
-            {(en && enLang["contact.name"].defaultMessage) ||
-              (fr && frLang["contact.name"].defaultMessage)}
-          </label>
-          <input
-            type="text"
-            name="name"
-            className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
-              errors.name
-                ? "border-red-500 mb-2"
-                : "border-[#252424]  mb-4 md:mb-10"
-            }`}
-          />
-          {errors.name && (
-            <p className="text-red-500 text-sm mb-2">{errors.name}</p>
-          )}
-
-          <label className="font-medium pl-1 block mb-2">Email</label>
-          <input
-            type="email"
-            name="email"
-            className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
-              errors.email
-                ? "border-red-500 mb-2"
-                : "border-[#252424] max-md:mb-4"
-            }`}
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm max-sm:mb-2">{errors.email}</p>
-          )}
-        </div>
-        <div className="flex flex-col w-full md:w-[40%] md:ml-2">
-          <label className="font-medium pl-1 block mb-2">Message</label>
-          <textarea
-            name="message"
-            className={`py-3 px-2 w-full h-[100px] md:h-[180px] rounded-md bg-transparent border ${
-              errors.message ? "border-red-500 mb-2" : "border-[#252424]"
-            } resize-none`}
-          />
-          {errors.message && (
-            <p className="text-red-500 text-sm">{errors.message}</p>
-          )}
-        </div>
+    <div id="Contact" className="mt-16 mb-16 text-[#252424]">
+      <div className="flex flex-row justify-center lg:justify-start items-center mb-8 lg:mb-16">
+        <h3 className="mr-2 text-[20px] lg:text-[26px] font-medium">Contact</h3>
+        <hr className="w-2 h-2 border-2 rounded-full bg-[#F24CEB] border-[#252424]" />
       </div>
-      <button className="w-[140px] py-2 lg:w-[180px] border rounded-full border-[#222831] bg-[#C9F129] font-medium shadow-md hover:shadow-transparent shadow-[#22283160] block ml-auto mt-8">
-        {(en && enLang["contact.btn"].defaultMessage) ||
-          (fr && frLang["contact.btn"].defaultMessage)}
-      </button>
-    </form>
+      <form
+        onSubmit={handleSubmit}
+        id="Contact"
+        className="text-[#252424] font-Roboto mt-16 w-full"
+      >
+        <div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start w-full text-[14px] md:text-[16px] lg:text-[20px]">
+          <div className="flex flex-col w-full md:w-[40%] md:mr-2">
+            <label className="font-medium pl-1 block mb-2">
+              {(en && enLang["contact.name"].defaultMessage) ||
+                (fr && frLang["contact.name"].defaultMessage)}
+            </label>
+            <input
+              type="text"
+              name="name"
+              className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
+                errors.name
+                  ? "border-red-500 mb-2"
+                  : "border-[#252424]  mb-4 md:mb-10"
+              }`}
+            />
+            {errors.name && (
+              <p className="text-red-500 text-sm mb-2">{errors.name}</p>
+            )}
+
+            <label className="font-medium pl-1 block mb-2">Email</label>
+            <input
+              type="email"
+              name="email"
+              className={`py-3 px-2 w-full h-[40px] md:h-[52px] rounded-md bg-transparent border ${
+                errors.email
+                  ? "border-red-500 mb-2"
+                  : "border-[#252424] max-md:mb-4"
+              }`}
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm max-sm:mb-2">{errors.email}</p>
+            )}
+          </div>
+          <div className="flex flex-col w-full md:w-[40%] md:ml-2">
+            <label className="font-medium pl-1 block mb-2">Message</label>
+            <textarea
+              name="message"
+              className={`py-3 px-2 w-full h-[100px] md:h-[180px] rounded-md bg-transparent border ${
+                errors.message ? "border-red-500 mb-2" : "border-[#252424]"
+              } resize-none`}
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm">{errors.message}</p>
+            )}
+          </div>
+        </div>
+        <button className="w-[140px] py-2 lg:w-[180px] border rounded-full border-[#222831] bg-[#C9F129] font-medium shadow-md hover:shadow-transparent shadow-[#22283160] block ml-auto mt-8">
+          {(en && enLang["contact.btn"].defaultMessage) ||
+            (fr && frLang["contact.btn"].defaultMessage)}
+        </button>
+      </form>
+    </div>
   );
 }
